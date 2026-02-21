@@ -432,7 +432,7 @@
     <p>New Age Homes offers a warm, dignified, and vibrant environment for your loved ones — where every day is filled with comfort, care, and connection.</p>
     <div class="hero-btns">
       <a href="#" class="btn-primary">Explore Our Homes</a>
-      <a href="#" class="btn-outline">Book a Visit</a>
+      <a href="#" class="btn-outline" onclick="goToBookPage()">Book a Visit</a>
     </div>
   </div>
 </div>
@@ -541,7 +541,7 @@
 <div class="cta-section">
   <h2>Give Your Loved One the Life They Deserve</h2>
   <p>Schedule a free visit and experience the warmth of New Age Homes for yourself.</p>
-  <a href="#" class="btn-primary">Book a Free Visit</a>
+  <a href="#" class="btn-primary" onclick="goToBookPage()">Book a Free Visit</a>
 </div>
 
 <footer>
@@ -553,6 +553,14 @@
     <a href="#">Contact</a>
   </div>
 </footer>
+
+<script>
+function goToBookPage() {
+  window.location.href = 'book.html';
+}
+</script>
+
+<!-- Removed duplicate button, navigation handled above -->
 
 </body>
 </html>

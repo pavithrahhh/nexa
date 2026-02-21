@@ -546,6 +546,8 @@
 
     <div class="footer">
       Don't have an account? <a href="#">Create one</a>
+      <br><br>
+      <button class="btn" style="width:auto;padding:10px 24px;margin-top:10px;" onclick="bookVisit()">Book a Visit</button>
     </div>
 
   </div>
@@ -586,6 +588,14 @@ function handleLogin(btn) {
       span.textContent = 'Sign In';
     }, 2500);
   }, 1600);
+    // Redirect to home_page.html after authentication
+    setTimeout(() => {
+      window.location.href = 'home_page.html';
+    }, 1200);
+}
+// Book a Visit button handler
+function bookVisit() {
+  window.location.href = 'book.html';
 }
 </script>
 
